@@ -10,10 +10,10 @@ const blogs: BlogPost[] = [
     slug: "elevate-your-home-decor",
     authorId: "",
     teamId: "",
-    createdAt: '2025-01-01T06:36:10.231Z',
-    updatedAt: '2025-01-01T06:36:10.231Z',
-    publishedAt: '2025-01-01T06:36:10.231Z',
-    metadata: undefined,
+    createdAt: '2025-01-04T06:36:10.231Z',
+    updatedAt: '2025-01-04T06:36:10.231Z',
+    publishedAt: '2025-01-04T06:36:10.231Z',
+    metadata: "Elevate Your Home Decor",
     author: {
         name: "",
         image: "/blog-1.webp"
