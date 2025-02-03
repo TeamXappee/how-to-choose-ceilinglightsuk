@@ -1,23 +1,21 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { GetPostsResult } from "@/lib/wisp";
 import { formatDate } from "date-fns";
-import Image from "next/image";
 import Link from "next/link";
 import { FunctionComponent } from "react";
 
 export const BlogPostPreview: FunctionComponent<{
-  post: GetPostsResult["posts"][0];
+  post: BlogPost;
 }> = ({ post }) => {
   return (
     <div className="break-words">
       <Link href={`/blog/${post.slug}`}>
         <div className="aspect-[16/9] relative">
-          <Image
+          <img
             alt={post.title}
             className="object-cover"
             src={post.image || "/images/placeholder.webp"}
-            fill
+            // fill
           />
         </div>
       </Link>
@@ -44,7 +42,7 @@ export const BlogPostPreview: FunctionComponent<{
 };
 
 export const BlogPostsPreview: FunctionComponent<{
-  posts: GetPostsResult["posts"];
+  posts: BlogPost[];
   className?: string;
 }> = ({ posts, className }) => {
   return (
