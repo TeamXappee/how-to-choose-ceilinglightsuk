@@ -68,7 +68,7 @@ const Page = async (props: { params: Promise<Params> }) => {
       />
       <div className="container mx-auto px-5">
         <Header />
-        <div className="max-w-prose mx-auto text-xl">
+       <div className="max-w-prose mx-auto text-xl">
           <BlogPostContent post={post} />
           {/* <RelatedPosts posts={posts} />
           <CommentSection slug={slug} /> */}
