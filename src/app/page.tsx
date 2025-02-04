@@ -11,6 +11,7 @@ const Page = async (
       <Header />
       <BlogPostsPreview posts={blogs} />
       <Footer />
+      
     </div>
   );
 };
